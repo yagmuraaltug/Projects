@@ -17,8 +17,16 @@ namespace Classes
                 Id = 2, City = "Antalya", Name = "Unsal"
             };
 
-            Console.WriteLine("Ilk musteri : " + customer.Name);
+            
 
+
+
+            Console.WriteLine("Ilk musteri : " + customer.Name + "\nBulundugu Sehir : " + customer.City);
+            CustomerManager manager = new CustomerManager();
+            manager.Add();
+
+            Console.WriteLine("Ikinci musteri : " + customer2.Name + "\nBulundugu Sehir : " + customer2.City);
+            manager.Delete();
         }
     }
 }
